@@ -1,19 +1,30 @@
-html, body {
+/* 모든 요소 초기화 */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;   /* 스크롤 방지 핵심 */
-  width: 100%;
 }
 
+/* HTML, BODY 완전 고정 */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  background: #fff;
+}
+
+/* main도 고정 */
 main {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }
 
+/* 이미지 크기 제어 */
 img {
-  width: 100%;          /* 부모 너비에 딱 맞춤 */
-  max-width: 100%;      /* 더 커지지 않도록 제한 */
-  height: auto;         /* 비율 유지 */
   display: block;
+  width: 100%;       /* 부모 기준 꽉 차게 */
+  max-width: 100%;   /* 절대 넘지 않음 */
+  height: auto;
 }
