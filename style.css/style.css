@@ -1,29 +1,27 @@
-/* 기본 초기화 */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* 전체 화면 스크롤 방지 */
 html, body {
-  overflow-x: hidden;
   width: 100%;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
-/* main 컨테이너도 스크롤 방지 + 너비 고정 */
 main {
   width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* 이미지 사이 간격 */
+  align-items: center;
 }
 
-/* 이미지가 절대 화면 너비 이상 크지 않도록 고정 */
 img {
-  display: block;
   width: 100%;
-  max-width: 100%;
+  max-width: 100vw;   /* 💡 화면 너비 이상 커지지 않도록 제한 */
   height: auto;
-  margin: 0 auto;
+  display: block;
+  object-fit: contain;
 }
