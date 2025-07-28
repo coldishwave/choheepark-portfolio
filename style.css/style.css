@@ -1,30 +1,29 @@
-/* 모든 요소 초기화 */
+/* 기본 초기화 */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* HTML, BODY 완전 고정 */
+/* 전체 화면 스크롤 방지 */
 html, body {
+  overflow-x: hidden;
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
-  font-family: sans-serif;
-  background: #fff;
 }
 
-/* main도 고정 */
+/* main 컨테이너도 스크롤 방지 + 너비 고정 */
 main {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }
 
-/* 이미지 크기 제어 */
+/* 이미지가 절대 화면 너비 이상 크지 않도록 고정 */
 img {
   display: block;
-  width: 100%;       /* 부모 기준 꽉 차게 */
-  max-width: 100%;   /* 절대 넘지 않음 */
+  width: 100%;
+  max-width: 100%;
   height: auto;
+  margin: 0 auto;
 }
