@@ -1,22 +1,19 @@
-* {
-  box-sizing: border-box;
+html, body {
   margin: 0;
   padding: 0;
-}
-
-body {
-  background-color: #fff;
-  font-family: sans-serif;
+  overflow-x: hidden;   /* 스크롤 방지 핵심 */
+  width: 100%;
 }
 
 main {
+  width: 100%;
   max-width: 100%;
-  overflow-x: hidden;  /* 좌우 스크롤 방지 */
+  overflow-x: hidden;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;          /* 부모 너비에 딱 맞춤 */
+  max-width: 100%;      /* 더 커지지 않도록 제한 */
+  height: auto;         /* 비율 유지 */
   display: block;
-  margin: 0 auto; /* 가운데 정렬 (선택) */
 }
