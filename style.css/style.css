@@ -1,17 +1,22 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: #fff;
+}
+
+body {
+  background-color: #fff;
+  font-family: sans-serif;
 }
 
 main {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 20px;
+  max-width: 100%;
+  overflow-x: hidden;  /* 좌우 스크롤 방지 */
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   display: block;
-  margin-bottom: 40px;
+  margin: 0 auto; /* 가운데 정렬 (선택) */
 }
