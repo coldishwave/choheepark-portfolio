@@ -5,26 +5,24 @@
   box-sizing: border-box;
 }
 
-/* 전체 배경 및 텍스트 정렬 */
+/* 배경: 블랙, 텍스트는 흰색으로 */
 body {
   font-family: 'Apple SD Gothic Neo', sans-serif;
-  line-height: 1.6;
-  background-color: #ffffff;
-  color: #333;
+  background-color: #000;     /* ← 블랙 배경 */
+  color: #fff;                /* ← 텍스트는 흰색 */
   display: flex;
   justify-content: center;
 }
 
 /* 메인 컨테이너 */
 main {
-  width: 95%;
-  max-width: 1440px;       /* 큰 화면에서도 넉넉하게 */
-  margin: 40px auto;
+  width: 100%;
+  max-width: 1600px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  padding: 20px;
 }
 
 /* 제목 */
@@ -35,29 +33,28 @@ h1, h2, h3 {
 
 /* 이미지 */
 img {
-  width: 100%;             /* 부모 요소 기준 꽉 차게 */
-  max-width: 1200px;       /* 데스크탑에서 너무 커지지 않도록 */
+  width: 100%;
+  max-width: 1200px;
   height: auto;
   display: block;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: 0;
 }
 
-/* 텍스트 블럭 */
+/* 섹션/텍스트 블록 - box-shadow 제거 */
 section, article, .content {
   width: 100%;
   max-width: 1200px;
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+  background-color: transparent;   /* 박스 배경 제거 */
+  border-radius: 0;
+  color: #fff;
 }
 
 /* 반응형 */
 @media screen and (max-width: 768px) {
   main {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     gap: 20px;
   }
 
