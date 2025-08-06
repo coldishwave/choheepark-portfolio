@@ -1,33 +1,29 @@
-/* 모든 요소 기본값 리셋 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 바디를 화면 중앙 정렬 */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* 화면 세로 전체 차지 */
+  min-height: 100vh;
   background-color: #fff;
 }
 
-/* 메인 요소 세로 정렬 및 가운데 정렬 */
 main {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* 이미지 간 간격 */
+  gap: 20px;
   align-items: center;
-  width: 100%;
+  width: 90%;               /* 화면의 90%까지 사용 */
+  max-width: 1400px;        /* 데스크탑에서 충분히 넓게 */
   padding: 20px;
 }
 
-/* 이미지 반응형 설정 */
 img {
-  width: 100%;
-  max-width: 800px; /* 데스크탑에서 너무 커지지 않도록 제한 */
+  width: 100%;              /* 부모인 main의 너비에 맞게 */
   height: auto;
   display: block;
 }
