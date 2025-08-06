@@ -7,16 +7,18 @@
 body {
   background-color: #fff;
   font-family: sans-serif;
-  display: flex;
-  justify-content: center;     /* ⬅️ 수평 중앙 정렬 */
   padding: 40px 0;
-  overflow-x: hidden;
 }
 
+/* ✅ 핵심: main을 가운데 고정, 최대 1600px */
 main {
-  width: 1600px;               /* ⬅️ 아이맥 기준 넓이 */
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;  /* 작은 화면에서 여백 주기 위함 */
 }
 
+/* 이미지 스타일 */
 img {
   width: 100%;
   height: auto;
